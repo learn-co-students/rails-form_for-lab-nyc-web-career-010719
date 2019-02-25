@@ -1,0 +1,22 @@
+<h1>All The Students</h1>
+
+<% @students.each do |student| %>
+  <%= link_to "#{student.first_name + " " + student.last_name}", student_path(student) %>
+
+
+<% end %>
+
+
+
+
+ <!--
+   wow somehow Rails is smart enough to combine the first name and last name just from student! 
+<%#
+<h1>All The Students</h1>
+
+<% @students.each do |student| %>
+  <%= link_to "#{student}", student_path(student) %>
+
+
+<% end %> %>
+-->
